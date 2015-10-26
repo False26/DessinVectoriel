@@ -21,8 +21,16 @@ public interface Dessin {
      */
     public String convertir(Objet o);
 
-
+    /**
+     * Traite les objets un par un.
+     * @param objets un array d'objets
+     */
     public void interpreter(Objet[] objets);
+
+    /**
+     * Change le crayon servant à dessiner
+     * @param c
+     */
     public void changerCrayon(Crayon c);
 
 }

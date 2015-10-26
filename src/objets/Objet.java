@@ -5,11 +5,13 @@ package objets;
  */
 public interface Objet {
 
+
+
     public boolean remplir();
 
     public boolean dessiner();
 
-    public boolean insérer();
+    public boolean inserer();
 
     public boolean etiqueter();
 }
