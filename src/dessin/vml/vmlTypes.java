@@ -6,7 +6,10 @@ package dessin.vml;
 public enum vmlTypes {
 
     RECTANGLE("rect"),
-
+    ARC("arc"),
+    // pour un cercle, faire un arc allant de 0 à 360°
+    CERCLE("arc"),
+    BEZIER("curve"),
     LIGNE("line");
 
     private String type = "";
