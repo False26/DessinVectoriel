@@ -10,42 +10,47 @@ import java.io.File;
  */
 public class Vml {
     private Crayon crayon;
-    private int top;
-    private int left;
-    private int height;
-    private int width;
+    private String header;
+    private String content;
+    private String footer;
 
-    public Vml(int top, int left, int height, int width, Crayon crayon) {
-        this.top = top;
-        this.left = left;
-        this.height = height;
-        this.width = width;
+    public Vml(Crayon crayon, String header, String footer) {
         this.crayon = crayon;
+        this.header = header;
+        this.content = "";
+        this.footer = footer;
+    }
+
+    public void setCrayon(Crayon crayon) {
+        this.crayon = crayon;
+    }
+
+    public void setHeader(String header) {
+        this.header = header;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setFooter(String footer) {
+        this.footer = footer;
+    }
+
+    public String getHeader() {
+        return header;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public String getFooter() {
+        return footer;
     }
 
     public Crayon getCrayon() {
         return crayon;
     }
 
-    public int getTop() {
-        return top;
-    }
-
-    public int getLeft() {
-        return left;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public File creerFichier () {
-        File f = new File("./output.vml");
-
-        return f;
-    }
 }
