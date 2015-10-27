@@ -12,6 +12,9 @@ import java.io.File;
 public abstract class Vml implements Dessin {
     private Crayon crayon;
 
+    public Vml(Crayon crayon) {
+        this.crayon = crayon;
+    }
 
     public File creerFichier () {
         File f = new File("./output.vml");
@@ -19,6 +22,10 @@ public abstract class Vml implements Dessin {
         return f;
     }
 
+
+    public void ajouter(String s) {}
+
+    public void interpreter(Objet[] objets){}
 
     @Override
     public void changerCrayon(Crayon c) {
