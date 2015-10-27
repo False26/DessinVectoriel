@@ -5,12 +5,18 @@ package dessin.vml;
  */
 public enum vmlTypes {
 
-    RECTANGLE("rect"),
     ARC("arc"),
+    RECTANGLE("rect"),
+    BEZIER("curve"),
+
     // pour un cercle, faire un arc allant de 0 à 360°
     CERCLE("arc"),
-    BEZIER("curve"),
-    LIGNE("line");
+    POLYGONE("polyline"),
+
+    // pour une ligne, relier le dernier au premier point
+    LIGNE("line")
+    
+    ;
 
     private String type = "";
 
