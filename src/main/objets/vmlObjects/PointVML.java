@@ -3,7 +3,6 @@ package main.objets.vmlObjects;
 import main.objets.Crayon;
 import main.objets.interfaces.IChemin;
 import main.objets.interfaces.IPoint;
-import main.objets.interfaces.Objet;
 
 import java.awt.*;
 

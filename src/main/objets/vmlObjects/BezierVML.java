@@ -4,7 +4,6 @@ import main.objets.Crayon;
 import main.objets.interfaces.IBezier;
 import main.objets.interfaces.IChemin;
 import main.objets.interfaces.IPoint;
-import main.objets.interfaces.Objet;
 
 import java.awt.*;
 

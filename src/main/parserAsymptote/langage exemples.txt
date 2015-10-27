@@ -1,0 +1,9 @@
+
+Canevas de 100,100 SVG/VML/LES2
+Dessiner segment de 0,0 à 50.5,50
+Etiqueter au NW avec "Bonjour maman" Remplir de rouge Dessiner cercle de centre 0,0 de rayon 20
+Dessiner arc de cercle de centre 0,0 de rayon 20 angles 20 à 40
+Dessiner polygone ferme de coordonnees 0,0 10,0 10,10 0,10
+Crayon de couleur C4F5E6 de taille 4
+Inserer * dans *
+Dessiner polygone ouvert de coordonnees 0,0 10,0 10,10 0,10

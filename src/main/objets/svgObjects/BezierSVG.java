@@ -3,8 +3,8 @@ package main.objets.svgObjects;
 import main.objets.Crayon;
 import main.objets.interfaces.IBezier;
 import main.objets.interfaces.IChemin;
+import main.objets.interfaces.ICircuit;
 import main.objets.interfaces.IPoint;
-import main.objets.interfaces.Objet;
 
 import java.awt.*;
 
@@ -18,17 +18,12 @@ public class BezierSVG implements IBezier {
 
 
     @Override
-    public boolean remplir(Color c, String[] params) {
-        return false;
-    }
-
-    @Override
     public boolean dessiner(IChemin chemin, Crayon crayon) {
         return false;
     }
 
     @Override
-    public boolean inserer(Objet objet) {
+    public boolean inserer(ICircuit contenant) {
         return false;
     }
 
