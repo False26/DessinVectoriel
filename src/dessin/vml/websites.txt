@@ -1,0 +1,40 @@
+VML :
+
+http://www.w3.org/TR/NOTE-VML#_Toc416858407
+
+rectangle :
+<v:rect
+   fillcolor="green"
+   style="top:1;left:1;width:50;height:50">
+   </v:rect>
+
+cercle :
+<v:oval style='width:100pt;height:75pt' fillcolor="red"> </v:oval>
+(avec width = heigth)
+
+
+arc :
+<v:arc
+   style="top:10;left:10;width:200;height:200"
+   startangle="90" endangle="270">
+   </v:arc>
+
+Polygone :
+<v:polyline
+   points="10pt,10pt 100pt,100pt">
+   </v:polyline>
+(en rejoignant le dernier point au premier point)
+
+
+Bezier :
+<v:curve
+   from="10pt,10pt" to="100pt,10pt"
+   control1="40pt,30pt" control2="70pt,30pt">
+   </v:curve>
+
+
+
+Line :
+<v:line
+   from="10,10" to="100,100">
+   </v:line>
