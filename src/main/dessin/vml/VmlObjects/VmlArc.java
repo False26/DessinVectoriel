@@ -1,6 +1,7 @@
 package main.dessin.vml.VmlObjects;
 
 import main.dessin.vml.Vml;
+import main.dessin.vml.vmlTypes;
 import main.objets.Crayon;
 
 
@@ -19,7 +20,7 @@ public class VmlArc extends Vml {
     }
 
     public String vmlScript () {
-        return "<v:"+vmlTypes.ARC.name()+"\n" +
+        return "<v:"+ vmlTypes.ARC.name()+"\n" +
                 "style=\"top:"+getTop()+";left:"+getLeft()+";width:"+getWidth()+";height:"+getHeight()+"\"\n" +
                 "startangle=\""+startAngle+"\" endangle=\""+endAngle+"\">\n" +
                 "</v:"+vmlTypes.ARC.name()+">";
