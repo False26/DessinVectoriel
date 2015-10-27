@@ -1,4 +1,4 @@
-package objets.svgObjects;
+package objets.vmlObjects;
 
 import objets.Crayon;
 import objets.interfaces.IArc;
@@ -9,16 +9,9 @@ import objets.interfaces.Objet;
 import java.awt.*;
 
 /**
- * Created by Vic on 26/10/2015.
+ * Created by Amaury on 27/10/2015.
  */
-public class Arc implements IArc {
-
-    private Cercle cercle;
-    private double angle1;
-    private double angle2;
-    private boolean clockwise;
-
-
+public class ArcVML implements IArc {
     @Override
     public boolean remplir(Color c, String[] params) {
         return false;

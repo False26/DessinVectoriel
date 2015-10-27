@@ -1,24 +1,30 @@
 package objets.svgObjects;
 
+import objets.Crayon;
 import objets.interfaces.ICercle;
+import objets.interfaces.IChemin;
+import objets.interfaces.IPoint;
+import objets.interfaces.Objet;
+
+import java.awt.*;
 
 /**
  * Created by Vic on 26/10/2015.
  */
-public class Cercle implements ICercle {
-    private Point centre;
+public class CercleSVG implements ICercle {
+    private PointSVG centre;
     private double rayon;
 
-    public Cercle(Point centre, double rayon) {
+    public CercleSVG(PointSVG centre, double rayon) {
         this.centre = centre;
         this.rayon = rayon;
     }
 
-    public Point getCentre() {
+    public PointSVG getCentre() {
         return centre;
     }
 
-    public void setCentre(Point centre) {
+    public void setCentre(PointSVG centre) {
         this.centre = centre;
     }
 
@@ -32,22 +38,22 @@ public class Cercle implements ICercle {
 
 
     @Override
-    public boolean remplir() {
+    public boolean remplir(Color c, String[] params) {
         return false;
     }
 
     @Override
-    public boolean dessiner() {
+    public boolean dessiner(IChemin chemin, Crayon crayon) {
         return false;
     }
 
     @Override
-    public boolean inserer() {
+    public boolean inserer(Objet objet) {
         return false;
     }
 
     @Override
-    public boolean etiqueter() {
+    public boolean etiqueter(String s, IPoint p) {
         return false;
     }
 }

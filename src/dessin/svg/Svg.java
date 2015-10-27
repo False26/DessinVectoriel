@@ -1,7 +1,7 @@
 package dessin.svg;
 
 import dessin.Dessin;
-import objets.svgObjects.Cercle;
+import objets.svgObjects.CercleSVG;
 import objets.Crayon;
 import objets.interfaces.Objet;
 
@@ -39,10 +39,10 @@ public class Svg implements Dessin{
     public String convertir(Objet o) {
         //TODO : switchCase
 
-        if(o instanceof Cercle){
-            return "<circle cx="+((Cercle ) o).getCentre().getAscisse()
-                    +" cy="+((Cercle ) o).getCentre().getOrdonnee()
-                    +" r="+((Cercle ) o).getRayon()+" />";
+        if(o instanceof CercleSVG){
+            return "<circle cx="+((CercleSVG) o).getCentre().getAscisse()
+                    +" cy="+((CercleSVG) o).getCentre().getOrdonnee()
+                    +" r="+((CercleSVG) o).getRayon()+" />";
         }
 
         return null;
