@@ -1,7 +1,7 @@
 package dessin;
 
 import objets.Crayon;
-import objets.Objet;
+import objets.interfaces.Objet;
 
 /**
  * Created by Vic on 26/10/2015.

@@ -1,9 +1,9 @@
 package dessin.svg;
 
 import dessin.Dessin;
-import objets.Cercle;
+import objets.svgObjects.Cercle;
 import objets.Crayon;
-import objets.Objet;
+import objets.interfaces.Objet;
 
 /**
  * Created by Amaury on 26/10/2015.

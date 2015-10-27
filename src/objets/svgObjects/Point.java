@@ -1,9 +1,11 @@
-package objets;
+package objets.svgObjects;
+
+import objets.interfaces.IPoint;
 
 /**
  * Created by Vic on 26/10/2015.
  */
-public class Point {
+public class Point implements IPoint {
     private double ascisse;
     private double ordonnee;
 
@@ -26,5 +28,25 @@ public class Point {
 
     public void setOrdonnee(double ordonnee) {
         this.ordonnee = ordonnee;
+    }
+
+    @Override
+    public boolean remplir() {
+        return false;
+    }
+
+    @Override
+    public boolean dessiner() {
+        return false;
+    }
+
+    @Override
+    public boolean inserer() {
+        return false;
+    }
+
+    @Override
+    public boolean etiqueter() {
+        return false;
     }
 }

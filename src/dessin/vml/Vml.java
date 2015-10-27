@@ -1,18 +1,18 @@
-package dessin.eps;
+package dessin.vml;
 
-import objets.Objet;
+import objets.interfaces.Objet;
 
 import java.io.File;
 
 /**
  * Created by Amaury on 26/10/2015.
  */
-public class Eps {
+public class Vml {
     private Objet[] objets;
 
 
     public File creerFichier () {
-        File f = new File("./output.eps");
+        File f = new File("./output.vml");
 
         return f;
     }

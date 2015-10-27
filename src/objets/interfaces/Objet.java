@@ -1,4 +1,4 @@
-package objets;
+package objets.interfaces;
 
 /**
  * Created by Amaury on 26/10/2015.

@@ -1,9 +1,11 @@
-package objets;
+package objets.svgObjects;
+
+import objets.interfaces.ICercle;
 
 /**
  * Created by Vic on 26/10/2015.
  */
-public class Cercle {
+public class Cercle implements ICercle {
     private Point centre;
     private double rayon;
 
@@ -29,4 +31,23 @@ public class Cercle {
     }
 
 
+    @Override
+    public boolean remplir() {
+        return false;
+    }
+
+    @Override
+    public boolean dessiner() {
+        return false;
+    }
+
+    @Override
+    public boolean inserer() {
+        return false;
+    }
+
+    @Override
+    public boolean etiqueter() {
+        return false;
+    }
 }
