@@ -12,6 +12,9 @@ public class VmlWriter implements Writer {
         this.vmlType = vmlType;
     }
 
+    public VmlWriter() {
+    }
+
     @Override
     public String addHeader() {
         return "<v:"+vmlType.name()+"\n";
