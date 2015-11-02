@@ -3,6 +3,7 @@ package main.objets.vmlObjects;
 import main.objets.Crayon;
 import main.objets.interfaces.IArc;
 import main.objets.interfaces.IChemin;
+import main.objets.interfaces.ICircuit;
 import main.objets.interfaces.IPoint;
 
 import java.awt.*;
@@ -76,23 +77,19 @@ public class ArcVML implements IArc {
         this.endAngle = endAngle;
     }
 
+
     @Override
-    public boolean remplir(Color c, String[] params) {
+    public String dessiner() {
+        return null;
+    }
+
+    @Override
+    public boolean inserer(ICircuit contenant) {
         return false;
     }
 
     @Override
-    public boolean dessiner(IChemin chemin, Crayon crayon) {
-        return false;
-    }
-
-    @Override
-    public boolean inserer(Objet objet) {
-        return false;
-    }
-
-    @Override
-    public boolean etiqueter(String s, IPoint p) {
-        return false;
+    public String etiqueter(String s) {
+        return null;
     }
 }
