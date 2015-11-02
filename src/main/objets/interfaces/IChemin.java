@@ -12,7 +12,7 @@ public interface IChemin {
      * Ajoute le chemin dans le fichier de sortie
      * @return true si l'ajout a bien été effectué, false sinon
      */
-    public boolean dessiner();
+    public String dessiner();
 
 
     /**
@@ -28,5 +28,5 @@ public interface IChemin {
      * @param s
      * @return true si l'ajout a bien été effectué, false sinon
      */
-    public boolean etiqueter(String s);
+    public String etiqueter(String s);
 }

@@ -18,9 +18,8 @@ public class ArcSVG implements IArc {
     private double angle2;
     private boolean clockwise;
 
-
     @Override
-    public boolean dessiner(IChemin chemin, Crayon crayon) {
+    public String dessiner() {
         return false;
     }
 
@@ -30,7 +29,8 @@ public class ArcSVG implements IArc {
     }
 
     @Override
-    public boolean etiqueter(String s, IPoint p) {
+    public boolean etiqueter(String s) {
         return false;
     }
 }
+

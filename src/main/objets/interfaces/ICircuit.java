@@ -5,5 +5,5 @@ package main.objets.interfaces;
  */
 public interface ICircuit extends IChemin {
 
-    public void remplir();
+    public String remplir();
 }
