@@ -1,3 +1,5 @@
+package main;
+
 import main.objets.Crayon;
 import main.objets.interfaces.IChemin;
 import main.objets.svgObjects.CercleSVG;
@@ -14,12 +16,14 @@ public class main {
         // Importer un fichier .txt qui contient les instructions
         // Appeler le parser
         // Le parser détermine si on veut du SVG ou VML ou les deux et renvoie un objet du type :
+        /*
         IChemin[] chemins =  { new CercleSVG(new PointSVG(0, 0), 40) , new SegmentSVG(new PointSVG(0,0), new PointSVG(20,20))};
         for(IChemin c : chemins){
             c.dessiner();
-            //si c'est pas un chemin mais un crayon on a Crayon.CRAYON = c;
 
-        }
+            //si c'est pas un chemin mais un crayon on a Crayon.CRAYON = c;
+*/
+
     }
 
 }
