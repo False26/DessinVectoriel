@@ -5,7 +5,7 @@ import main.objets.interfaces.IPoint;
 /**
  * Created by Vic on 26/10/2015.
  */
-public class PointSVG implements IPoint {
+public class PointSVG implements IPoint, ISVG {
     private double abscisse;
     private double ordonnee;
 
@@ -30,4 +30,8 @@ public class PointSVG implements IPoint {
         this.ordonnee = ordonnee;
     }
 
+    @Override
+    public SVG creation() {
+        return null;
+    }
 }

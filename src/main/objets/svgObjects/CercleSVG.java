@@ -11,7 +11,7 @@ import java.awt.*;
 /**
  * Created by Vic on 26/10/2015.
  */
-public class CercleSVG implements ICercle {
+public class CercleSVG implements ICercle, ISVG {
     private PointSVG centre;
     private double rayon;
 

@@ -11,10 +11,27 @@ import java.awt.*;
 /**
  * Created by Vic on 26/10/2015.
  */
-public class SegmentSVG implements ISegment {
-    private PointSVG point;
+public class SegmentSVG implements ISegment, ISVG {
+    private PointSVG pointA;
+    private PointSVG pointB;
 
 
+
+    public PointSVG getPointB() {
+        return pointB;
+    }
+
+    public void setPointB(PointSVG pointB) {
+        this.pointB = pointB;
+    }
+
+    public PointSVG getPointA() {
+        return pointA;
+    }
+
+    public void setPointA(PointSVG pointA) {
+        this.pointA = pointA;
+    }
 
     @Override
     public String dessiner() {
@@ -29,5 +46,17 @@ public class SegmentSVG implements ISegment {
     @Override
     public String etiqueter(String s) {
         return null;
+    }
+
+    @Override
+    public SVG creation() {
+        SVG segment = new SVG("path");
+        String value = "M "+this.getPointA().getAbscisse()+" "+
+                this.getPointA().getOrdonnee()+ "L "+
+                this.getPointB().getAbscisse()+ " "+
+                this.getPointB().getOrdonnee();
+        segment.addAttribute("d", value);
+
+        return segment;
     }
 }

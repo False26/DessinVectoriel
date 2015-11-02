@@ -11,7 +11,7 @@ import java.awt.*;
 /**
  * Created by Vic on 26/10/2015.
  */
-public class BezierSVG implements IBezier {
+public class BezierSVG implements IBezier, ISVG {
 
     private SegmentSVG base;
     private PointSVG parametre;
@@ -19,7 +19,22 @@ public class BezierSVG implements IBezier {
 
     @Override
     public String dessiner() {
-        return null;
+        return this.creation().toString();
+    }
+
+    public SVG creation(){
+        SVG bezier = new SVG("path");
+        String value = "M "+
+                this.base.getPointA().getAbscisse()+" "+
+                this.base.getPointA().getOrdonnee()+" Q "+
+                this.parametre.getAbscisse()+" "+
+                this.parametre.getOrdonnee()+" "+
+                this.base.getPointB().getAbscisse()+ " "+
+                this.base.getPointB().getOrdonnee();
+        bezier.addAttribute("d",value);
+
+        return bezier;
+
     }
 
     @Override

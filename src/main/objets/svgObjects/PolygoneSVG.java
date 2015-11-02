@@ -11,7 +11,7 @@ import java.awt.*;
 /**
  * Created by Vic on 26/10/2015.
  */
-public class PolygoneSVG implements IPolygone  {
+public class PolygoneSVG implements IPolygone, ISVG  {
 
     private PointSVG[] points;
 
@@ -26,6 +26,7 @@ public class PolygoneSVG implements IPolygone  {
         return null;
     }
 
+
     @Override
     public boolean inserer(ICircuit contenant) {
         return false;
@@ -34,5 +35,30 @@ public class PolygoneSVG implements IPolygone  {
     @Override
     public String etiqueter(String s) {
         return null;
+    }
+
+    @Override
+    public SVG creation() {
+
+
+        SVG polygone = new SVG("path");
+        boolean first = true;
+        String value = "";
+        for(PointSVG p : this.points){
+
+            if(first){
+                value += "M ";
+                first = false;
+            }
+            else{
+                value += "L ";
+            }
+
+            value += p.getAbscisse()+" "+p.getOrdonnee()+" ";
+
+        }
+        value+="Z ";
+        polygone.addAttribute("d",value);
+        return polygone;
     }
 }

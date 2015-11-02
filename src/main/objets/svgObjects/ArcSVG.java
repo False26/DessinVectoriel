@@ -11,7 +11,7 @@ import java.awt.*;
 /**
  * Created by Vic on 26/10/2015.
  */
-public class ArcSVG implements IArc {
+public class ArcSVG implements IArc, ISVG {
 
     private CercleSVG cercle;
     private double angle1;
@@ -31,6 +31,11 @@ public class ArcSVG implements IArc {
 
     @Override
     public String etiqueter(String s) {
+        return null;
+    }
+
+    @Override
+    public SVG creation() {
         return null;
     }
 }
