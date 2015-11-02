@@ -18,8 +18,8 @@ public class BezierSVG implements IBezier {
 
 
     @Override
-    public boolean dessiner(IChemin chemin, Crayon crayon) {
-        return false;
+    public String dessiner() {
+        return null;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class BezierSVG implements IBezier {
     }
 
     @Override
-    public boolean etiqueter(String s, IPoint p) {
-        return false;
+    public String etiqueter(String s) {
+        return null;
     }
 }

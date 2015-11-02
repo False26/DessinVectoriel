@@ -38,13 +38,13 @@ public class CercleSVG implements ICercle {
 
 
     @Override
-    public void remplir() {
-
+    public String remplir() {
+        return null;
     }
 
     @Override
-    public boolean dessiner(IChemin chemin, Crayon crayon) {
-        return false;
+    public String dessiner() {
+        return null;
     }
 
     @Override
@@ -53,7 +53,7 @@ public class CercleSVG implements ICercle {
     }
 
     @Override
-    public boolean etiqueter(String s, IPoint p) {
-        return false;
+    public String etiqueter(String s) {
+        return null;
     }
 }

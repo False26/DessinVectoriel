@@ -18,9 +18,10 @@ public class ArcSVG implements IArc {
     private double angle2;
     private boolean clockwise;
 
+
     @Override
     public String dessiner() {
-        return false;
+        return null;
     }
 
     @Override
@@ -29,8 +30,8 @@ public class ArcSVG implements IArc {
     }
 
     @Override
-    public boolean etiqueter(String s) {
-        return false;
+    public String etiqueter(String s) {
+        return null;
     }
 }
 
