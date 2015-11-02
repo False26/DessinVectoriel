@@ -9,8 +9,8 @@ public class PointSVG implements IPoint {
     private double abscisse;
     private double ordonnee;
 
-    public PointSVG(double ascisse, double ordonnee) {
-        this.abscisse = ascisse;
+    public PointSVG(double abscisse, double ordonnee) {
+        this.abscisse = abscisse;
         this.ordonnee = ordonnee;
     }
 

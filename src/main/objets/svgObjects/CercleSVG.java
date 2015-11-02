@@ -39,12 +39,28 @@ public class CercleSVG implements ICercle {
 
     @Override
     public String remplir() {
+
+        SVG cercle = this.creation();
+        cercle.addAttribute("fill", "red");
+
         return null;
     }
 
     @Override
     public String dessiner() {
-        return null;
+
+
+        return this.creation().toString();
+    }
+
+    public SVG creation() {
+
+        SVG cercle = new SVG("circle");
+        cercle.addAttribute("cx", String.valueOf(this.centre.getAbscisse()));
+        cercle.addAttribute("cy", String.valueOf(this.centre.getOrdonnee()));
+        cercle.addAttribute("r", String.valueOf(this.getRayon()));
+
+        return cercle;
     }
 
     @Override
@@ -56,4 +72,17 @@ public class CercleSVG implements ICercle {
     public String etiqueter(String s) {
         return null;
     }
+
+
+    public static void main(String[] args) {
+
+        PointSVG point = new PointSVG(5,5);
+
+
+        CercleSVG a = new CercleSVG(point,2);
+
+        System.out.println(a.dessiner());
+
+    }
+
 }
